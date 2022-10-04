@@ -1,62 +1,84 @@
-## 책첵 : 구매, 판매전에 책정가격을 체크!
- 
-<br />
 
-<img src="https://user-images.githubusercontent.com/81909140/193509060-0abb56aa-6627-4846-8eeb-8727f5747ebb.png">
+<h1 align="center" ><b>책첵 : 구매, 판매전에 책정가격을 체크!</b></h1>
 
+<img width = "120" src="https://user-images.githubusercontent.com/107388110/190458944-477fdfa9-129c-4704-9e8e-481667262d06.PNG" width="80%">
 
  <br />
 
 ## ✨ 핵심기능
 
-**`메인 페이지 - 카테고리 별 조회 & 검색 기능`**
+<h2 align="center">1. 메인 페이지 - 카테고리 별 조회 & 무한스크롤(QueryDSL)</h2>
 
+<p align="center"> <img height = "600px" src="https://user-images.githubusercontent.com/81909140/193582276-884e37f5-86c7-428d-975f-8f9da0b457eb.gif"></p>
 
-*[ ] 최종발표전 기능 구현 이미지 추가예정
 
 QueryDSL을 이용한 동적 쿼리 작성으로 책정 카테고리 별 조회 기능과 [전체/진행중/진행완료] 별 검색 기능을 조합해서 사용할 수 있도록 했습니다.
+ <br />
+ <br />
 
+<h2 align="center">2. 무중단 배포 기술</h2>
 
-**`무중단 배포 기술`**
+<p align="center"> <img height = "250px" src="https://user-images.githubusercontent.com/107388110/193594640-31f32afd-858b-4a0e-be16-ac09f67726d6.PNG"></p>
 
 Git Action + Nginx 기술을 활용한 유동적인 개발 & 운영 서버를 관리하여 업무 효율성 증대
 
-*[ ] 최종발표전 기능 구현 이미지 추가예정
 
+ <br />
+ 
 
-**`실시간 알람 기능`**
+<h2 align="center">3. 실시간 알림 기능</h2>
 
-![sse](https://user-images.githubusercontent.com/81909140/192606571-bd9b013e-5ff9-4b9c-9671-f3531fd156a9.gif)
+<img height = "600px" src="https://user-images.githubusercontent.com/81909140/192606571-bd9b013e-5ff9-4b9c-9671-f3531fd156a9.gif">
 
 
 
 현재 서비스를 이용중인 유저에게 SSE(Server Sent Event)를 이용하여 실시간 알람을 기능 제공하고 있습니다.
 
+ <br />
+ 
 
 
-**`이메일 알람 기능`**
-![email2](https://user-images.githubusercontent.com/81909140/193575956-bfd2f776-ab26-415e-a7dd-226dc54dd5d9.gif)
+
+<h2 align="center">4. 이메일 알림</h2>
+
+
+<img height = "600px" src="https://user-images.githubusercontent.com/81909140/193575956-bfd2f776-ab26-415e-a7dd-226dc54dd5d9.gif">
 
 
 사이트에 접속하지 않은 유저를 고려하여 발생한 해당 이벤트의 내용을 JavaMailSender를 이용하여 이메일 알림으로 받을 수 있도록 했습니다.
 
-* [ ] 최종발표전 기능 구현 이미지 추가예정
+ <br />
+ 
 
 
-**`이미지 리사이징 기술`**
+<h2 align="center">5. 이미지 리사이징(imgScalr) 기능</h2>
 
-다량의 이미지 리소스를 효율적이고 이미지 서버의 용량을 최적화하여 관리하기 위해 이미지 압축 기술을 도입
+다량의 이미지 리소스를 효율적이고 이미지 서버의 용량을 최적화하여 관리하기 위해 이미지 압축 기능을 도입
 
-* [ ] 최종발표전 기능 구현 이미지 추가예정
+<img width="200" alt="originalImage" src="https://user-images.githubusercontent.com/81909140/193583776-ed9a1c7e-4d0d-4ccb-a584-47c3194ffa21.png">
+
+원본이미지 7.2MB
+
+<img width="1026" alt="resize crop" src="https://user-images.githubusercontent.com/81909140/193583768-278533bf-b18c-4758-8689-9523eac8b7bd.png">
 
  <br />
+ 
+* 이미지 리사이징으로 1/10 가량의 압축 (**7.2MB → 699.8KB**)
 
-**`Santry 활용한 Error Log Monitoring`**
+ <br />
+ 
+* 이미지 crop으로 썸네일 크기의 250배 가량 압축 (**7.2MB → 27.7KB**)
 
-다량의 이미지 리소스를 효율적이고 이미지 서버의 용량을 최적화하여 관리하기 위해 이미지 압축 기술을 도입
+ <br />
+ 
 
-* [ ] 최종발표전 기능 구현 이미지 추가예정
 
+<h2 align="center">6. Sentry 활용한 Error Log Monitoring</h2>
+
+무분별한 에러 로그에 대한 모니터링을 효율적으로 관리하기 위해 사용
+
+<img src="https://user-images.githubusercontent.com/108970153/193579404-ddf38508-4a43-4d3d-ba9b-5191344c45d0.png">
+<img src="https://user-images.githubusercontent.com/108970153/193580032-350bde06-249b-4217-9385-49a67c6ec7ee.png">
  <br />
 
 ## 👥 Back-End팀 소개
@@ -84,8 +106,9 @@ Git Action + Nginx 기술을 활용한 유동적인 개발 & 운영 서버를 �
 ## 🎈 ERD
 <img src="https://user-images.githubusercontent.com/81909140/193574565-becb44fa-8d42-47b6-84e8-fced552024e9.png">  
 <br />
+
 ## 📜 아키텍쳐
-<img src="https://user-images.githubusercontent.com/107388110/190461358-951eac84-df6b-4c4b-9ecf-3936a8550fa6.jpg">   
+![아키텍처2](https://user-images.githubusercontent.com/81909140/193764617-44b39330-f9ea-42df-8738-e403e83e1da0.PNG)
 
 <br />
 
@@ -140,5 +163,8 @@ Git Action + Nginx 기술을 활용한 유동적인 개발 & 운영 서버를 �
 <img src="https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
 <img src="https://img.shields.io/badge/ubuntu-FCC624?style=for-the-badge&logo=linux&logoColor=black">
 <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black">
+<img src="https://img.shields.io/badge/Sentry-362D59?style=for-the-badge&logo=Sentry&logoColor=white">
+<img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white">
+
 
 [//]: # (<img src="https://img.shields.io/badge/Apache JMeter-D22128?style=for-the-badge&logo=Apache JMeter&logoColor=white">)
